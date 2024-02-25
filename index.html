@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CypherSafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <p>CipherSafe</p>
+            <p class="centrado">Encriptador Y Desencriptador</p>
+        </div>
+    </header>
+    <div class="contenido">
+        <div class="cuadro-texto">
+            <p>TRADUCCION</p>
+            <div id="texto-no-editable">Traducción</div>
+            <button class="boton" onclick="Copiar();">Copiar</button>
+        </div>
+        <!-- Nuevo bloque de texto -->
+        <div class="nuevo-cuadro-texto">
+            <p>TEXTO:</p>
+            <div id="texto-editable" contenteditable="true"></div>
+            <button class="boton" onclick="Encriptar();">Encriptar</button>
+            <button class="boton" onclick="Desencriptar();">Desencriptar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CypherSafe. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
